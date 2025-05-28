@@ -26,7 +26,7 @@ with gr.Blocks(title="🧠 GPT Researcher Demo") as demo:
             report_type = gr.Dropdown(["research_summary", "detailed_report"], label="Report Type")
             submit_btn = gr.Button("Generate Report")
 
-            report_output = gr.Markdown(label="Generated Report", lines=10)
+            report_output = gr.Textbox(label="Generated Report")
             sources_output = gr.Textbox(label="Source URLs", lines=5)
             costs_output = gr.Textbox(label="Research Costs")
 
